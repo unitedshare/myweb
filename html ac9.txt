@@ -1,0 +1,303 @@
+</head>
+  <body>
+    <a id="top"></a>
+    <!-- Banner Section -->
+    <section class="banner" id="banner">
+      <div class="banner-content">
+        <!-- 可选：Banner 文字内容 -->
+      </div>
+      <img class="banner-desktop" src="https://static.gwvkyk.com/media/6d591b6fec786e2fdfb30.png" alt="Desktop Banner">
+      <img class="banner-mobile" src="https://static.gwvkyk.com/media/6d591b6fec786e2fdfb30.png" alt="Mobile Banner">
+    </section>
+<!-- Partners Section -->
+<div class="partners-header">
+  <div class="header-content">
+    <!-- 直接用图片替代 -->
+    <a href="https://your-link-here.com" target="_blank">
+      <img src="https://static.gwvkyk.com/media/3cbeca7fec7869c406328.gif" alt="VIP Partners Company" class="partner-image">
+    </a>
+  </div>
+</div>
+
+<style>
+  .partners-header {
+    text-align: center;
+    margin: 10px 0;
+  }
+
+  /* 图片样式 */
+  .partner-image {
+    display: block; /* 让图片成为块级元素 */
+    margin: 0 auto; /* 自动水平居中 */
+    max-width: 100%; /* 使图片宽度适应父容器 */
+    height: auto; /* 保持图片比例 */
+  }
+</style>
+<div class="content">
+      <div class="customAnchor"></div>
+      <div class="image-grid imageGrid">
+        <div class="image-container brandImage">
+          <a href="https://efa99aus.com/RFSS996RF" target="_blank">
+            <img src="https://static.gwvkyk.com/media/c2e2215f9d786d0ce2a1e.png" alt="EFA99SG">
+          </a>
+        </div>
+        <div class="image-container brandImage">
+          <a href="https://aud9.com/RFSS996_PS" target="_blank">
+            <img src="https://static.gwvkyk.com/media/eb2ed06f9d7860d5ae464.png" alt="SGDPOKIES">
+          </a>
+        </div>
+      </div>
+    </div>    
+    <div class="content">
+      <div class="customAnchor"></div>
+      <div class="image-grid imageGrid">
+        <div class="image-container brandImage">
+          <a href="https://jw8bet.co/RFRFSTAR996" target="_blank">
+            <img src="https://static.gwvkyk.com/media/ef3f6622ad786a9e499a6.png" alt="SVJ33">
+          </a>
+        </div>
+        <div class="image-container brandImage">
+          <a href="https://aud77.net/RFPARTNERSHIPSTARSPIN" target="_blank">
+            <img src="https://static.gwvkyk.com/media/a4c1e732ad786bf5a013a.png" alt="J8">
+          </a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="content">
+      <div class="customAnchor"></div>
+      <div class="image-grid imageGrid">
+        <div class="image-container brandImage">
+          <a href="https://ac8bet.com/RFPARTNERSHIPSS996" target="_blank">
+            <img src="https://static.gwvkyk.com/media/6f691c42ad786657a11e3.png" alt="SAND33">
+          </a>
+        </div>
+        <div class="image-container brandImage">
+          <a href="https://aus9.com/RFPARTNER_SS996" target="_blank">
+            <img src="https://static.gwvkyk.com/media/46a64752ad78699a28ed5.png" alt="WYNN33">
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="content">
+      <div class="customAnchor"></div>
+      <div class="image-grid imageGrid">
+        <div class="image-container brandImage">
+          <a href="https://bet9sg.co/RFB9SG_6235" target="_blank">
+            <img src="https://static.gwvkyk.com/media/374fa262ad7868bf28320.png" alt="BET9">
+          </a>
+        </div>
+        <div class="image-container brandImage">
+          <a href="https://aud365.co/RFRFPAG996" target="_blank">
+            <img src="https://static.gwvkyk.com/media/9f60af62ad786c782aa53.png" alt="SAND33 7">
+          </a>
+        </div>
+      </div>
+    </div>    
+    <div class="content">
+      <div class="customAnchor"></div>
+      <div class="image-grid imageGrid">
+        <div class="image-container brandImage">
+          <a href="https://mrbet9au.info/RFRF996SS" target="_blank">
+            <img src="https://static.gwvkyk.com/media/21095f72ad78637f32a54.png" alt="RW22 7">
+          </a>
+        </div>
+        <div class="image-container brandImage">
+          <a href="https://tab9au.com/RFSTARSPIN996_PS=" target="_blank">
+            <img src="https://static.gwvkyk.com/media/4a612c53ad786f1d64ee2.png" alt="IMANSIONBET 55">
+          </a>
+        </div>
+          </a>
+        </div>
+      </div>
+    </div>
+<section id="topProviders" style="background-color: transparent;">
+  <div class="tp-title" style="color: #FFD700; 
+      background: linear-gradient(135deg, #000000 20%, #FFA200 40%, #FFB400 60%, #FFDE5B 80%, #FFDE5A 100%); 
+      border: 3px solid #FFA200; 
+      padding: 15px 30px; 
+      border-radius: 8px; 
+      display: inline-block; 
+      font-family: 'Arial', sans-serif; 
+      font-weight: bold; 
+      text-transform: uppercase; 
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);">
+    Most Popular Game
+  </div>
+  <div class="tp-image-container">
+    <img src="https://static.gwvkyk.com/media/29559963ad7864d0a10df.png" alt="图片1">
+    <img src="https://static.gwvkyk.com/media/06774473ad786a96158d0.png" alt="图片2">
+    <img src="https://static.gwvkyk.com/media/eaf45c73ad786a47836c9.png" alt="图片3">
+  </div>
+</section>
+
+<style>
+  #topProviders {
+    background-color: transparent;
+    padding: 20px 0;
+  }
+
+  .tp-title {
+    font-size: 36px; /* 增大字体 */
+    font-weight: bold;
+    color: #3A4C47; /* 深青色字体 */
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: #A5D1D9; /* 淡青色背景，避免与主背景色冲突 */
+    border: 3px solid #7CA59D; /* 与背景色协调的边框 */
+    padding: 15px 30px; /* 增加内边距 */
+    border-radius: 8px; /* 圆角边框 */
+    display: inline-block; /* 让框和文字对齐 */
+  }
+
+  .tp-image-container img {
+    margin: 0 15px;
+  }
+</style>
+    <!-- Carousel Section -->
+    <section id="carouselSection">
+      <div class="carousel-container">
+        <div class="carousel" id="carousel">
+          <a href="#" target="_blank">
+            <img src="https://static.gwvkyk.com/media/c2e09f00f1286fbc8ee6d.png" alt="Image 1">
+          </a>
+          <a href="#" target="_blank">
+            <img src="https://static.gwvkyk.com/media/88b0e710f1286cecb7b35.png" alt="Image 2">
+          </a>
+          <a href="#" target="_blank">
+            <img src="https://static.gwvkyk.com/media/64a86020f12867c6706d6.png" alt="Image 3">
+          </a>
+          <a href="#" target="_blank">
+            <img src="https://static.gwvkyk.com/media/7a10bc20f1286812c0e18.png" alt="Image 4">
+          </a>
+          <a href="#" target="_blank">
+            <img src="https://static.gwvkyk.com/media/cac8c530f12864dab5b90.png" alt="Image 5">
+          </a>
+        </div>
+      </div>
+    </section>
+<!-- Payment Methods Section -->
+<section id="paymentMethods">
+  <div class="pm-title">Payment Methods</div>
+  <div class="pm-image-container">
+    <img src="https://static.gwvkyk.com/media/96269274cdc767acc1052.png" alt="图片1">
+    <img src="https://static.gwvkyk.com/media/5b555d74cdc765a877a53.png" alt="图片2">
+    <img src="https://static.gwvkyk.com/media/819e2684cdc76e3fbc70e.png" alt="图片3">
+    <img src="https://static.gwvkyk.com/media/3f8e2094cdc762e573104.png" alt="图片4">
+    <img src="https://static.gwvkyk.com/media/1a968a94cdc765bfc5740.png" alt="图片5">
+    <img src="https://static.gwvkyk.com/media/9d0e9ef54ec7663673d71.png" alt="图片6">
+  </div>
+</section>
+<!-- Telegram Banner Section -->
+<div id="telegramContainer" class="container default full">
+  <div class="wrapper">
+    <div class="inner">
+      <div id="telegramBanner" class="image full">
+        <a href="https://t.me/addlist/tsG_OF-6gSliYjE1" target="_blank">
+          <img src="https://static.gwvkyk.com/media/8f8f4493ad78639164e8a.png" alt="Telegram Banner">
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+    <!-- Footer Section -->
+    <div id="footerContainer">
+      <div class="white-line full-width"></div>
+      <div class="footer-content">
+        <div class="footer-left">
+          <img src="https://static.gwvkyk.com/media/aa3bae37fdc76635ac6aa.png" alt="Badge 1">
+          <img src="https://static.gwvkyk.com/media/107e8137fdc76c0eef50c.png" alt="Badge 2">
+        </div>
+        <div class="footer-right"> © Copyright @ 2025,starspin.co</div>
+      </div>
+    </div>
+    <!-- 返回顶部按钮 -->
+    <button id="scrollToTopBtn" onclick="scrollToTop()">
+      <img src="https://static.gwvkyk.com/media/327b34e6fdc765cff17b8.png" alt="Scroll to top" style="width:48px;height:48px;border:none">
+    </button>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        // 调用 shuffleImageOrder 函数打乱带有 .brandImage 类的元素顺序
+        shuffleImageOrder();
+        
+        // Carousel 拖拽效果
+        const carousel = document.getElementById('carousel');
+        if (carousel && !('ontouchstart' in window)) {
+          let isDown = false;
+          let startX;
+          let scrollLeft;
+          carousel.addEventListener('mousedown', (e) => {
+            e.preventDefault();
+            isDown = true;
+            startX = e.pageX - carousel.offsetLeft;
+            scrollLeft = carousel.scrollLeft;
+            carousel.style.scrollBehavior = 'auto';
+          });
+          carousel.addEventListener('mouseleave', () => {
+            isDown = false;
+          });
+          carousel.addEventListener('mouseup', () => {
+            isDown = false;
+            carousel.style.scrollBehavior = 'smooth';
+          });
+          carousel.addEventListener('mousemove', (e) => {
+            if (!isDown) return;
+            e.preventDefault();
+            const x = e.pageX - carousel.offsetLeft;
+            const walk = (x - startX) * 1.2;
+            carousel.scrollLeft = scrollLeft - walk;
+          });
+        }
+      });
+      
+      // 使用提供的 shuffleImageOrder 函数
+ function shuffleImageOrder() {
+        const brandImages = document.querySelectorAll('.brandImage');
+        const parentInfo = [];
+        // Store the parent node and next sibling for each brand image for reinsertion
+        brandImages.forEach(node => {
+          parentInfo.push({
+            parent: node.parentNode,
+            nextSibling: node.nextSibling
+          });
+        });
+        // Shuffle function (Fisher-Yates/Durstenfeld)
+        for (let i = brandImages.length - 1; i > 0; i--) {
+          const j = Math.floor(Math.random() * (i + 1));
+          [brandImages[i], brandImages[j]] = [brandImages[j], brandImages[i]];
+          [parentInfo[i], parentInfo[j]] = [parentInfo[j], parentInfo[i]];
+        }
+        // Reinsert shuffled brand images in their original containers
+        brandImages.forEach((node, index) => {
+          const {
+            parent,
+            nextSibling
+          } = parentInfo[index];
+          if (nextSibling) {
+            parent.insertBefore(node, nextSibling);
+          } else {
+            parent.appendChild(node);
+          }
+        });
+      }
+      shuffleImageOrder();
+      
+      const element = document.getElementById("top");
+      function scrollToTop() {
+        element.scrollIntoView(true);
+      }
+      function scrollToBottom() {
+        element.scrollIntoView(false);
+      }
+    </script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        document.body.style.setProperty("background-color", "white", "important");
+        document.querySelector("html").style.setProperty("background-color", "white", "important");
+        document.querySelector(".content").style.setProperty("background-color", "white", "important");
+        document.querySelector(".image-grid").style.setProperty("background-color", "white", "important");
+      });
+    </script>
+  </body>
+</html></body>
+</html>
