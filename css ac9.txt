@@ -1,0 +1,538 @@
+</script>
+</head>
+<body><!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- 添加 viewport-fit=cover 支持全面屏及刘海屏 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>AU Partnership</title>
+    <link rel="icon" type="image/png" href="https://static.wixstatic.com/media/06e328_e1ff9624c2334014a162e9f0fbb7a9d1~mv2.png" />
+    <!-- 引入Google字体 -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+     /* #content {
+        background-image: none;
+        background-color:#FFFFFF;
+      } */
+      /* =========================
+       全局重置及基础样式
+      ========================== */
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        -webkit-overflow-scrolling: touch;
+        background-color: #ffffff;
+        touch-action: pan-y;
+        font-family: 'Montserrat', Arial, sans-serif;
+      }
+      /* =========================
+       Banner 区域
+      ========================== */
+      .banner {
+        margin-top: -50px;
+        text-align: center;
+        background-color: #transparent;
+        position: relative;
+        padding: 40px 20px;
+      }
+      .banner .banner-content {
+        position: relative;
+        z-index: 2;
+      }
+      .banner-desktop,
+      .banner-mobile {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 20px auto 0;
+      }
+      .banner-mobile {
+        display: none;
+      }
+      @media (max-width: 768px) {
+        .banner {
+          margin: 0 !important;
+          padding: 0 !important;
+        }
+        .banner-desktop {
+          display: none;
+        }
+        .banner-mobile {
+          display: block;
+          margin: 0;
+          width: 100%;
+        }
+        .banner .banner-content h1 {
+          font-size: 24px;
+        }
+        .banner .banner-content p {
+          font-size: 14px;
+        }
+      }
+      /* =========================
+       Partners 部分
+      ========================== */
+      .partners-header {
+        position: relative;
+        width: 100%;
+        background: #ffffff;
+        z-index: 1000;
+        padding-top: 20px;
+      }
+      .partners-header .header-content {
+        padding: 10px 0;
+        text-align: center;
+      }
+      .selected-text {
+        font-size: 22px;
+        font-weight: bold;
+        color: #373957;
+        margin: 10px 0 15px;
+      }
+      .content {
+        margin-top: 20px;
+      }
+      #customAnchor {
+        position: relative;
+        top: -140px;
+        visibility: hidden;
+      }
+      .image-grid {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+        max-width: 900px;
+        margin: auto;
+        padding: 10px;
+      }
+      .image-container {
+        flex: 1 1 calc(50% - 30px);
+        max-width: 350px;
+        text-align: center;
+        position: relative;
+      }
+      /* 为使用 shuffleImageOrder 添加标识类 */
+      .brandImage {
+      }
+      .image-container img {
+        width: 100%;
+        transition: transform 0.3s ease-in-out;
+        cursor: pointer;
+      }
+      .image-container img:hover {
+        transform: scale(1.1);
+      }
+      .scroll-hint {
+        position: fixed;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: rgba(0, 0, 0, 0.5);
+        color: #fff;
+        padding: 10px 20px;
+        border-radius: 20px;
+        font-size: 16px;
+        display: none;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        opacity: 0;
+        transition: opacity 0.4s ease;
+        z-index: 99999;
+      }
+      .scroll-hint.show {
+        display: block;
+        opacity: 1;
+      }
+      @media (min-width: 769px) {
+        .banner-desktop {
+          max-width: 800px;
+          width: 100%;
+          margin: 0 auto;
+          display: block;
+        }
+      }
+      /* =========================
+       Top Providers 部分
+      ========================== */
+      #topProviders {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 40px 0;
+        width: 100%;
+        background-color: #ffffff;
+      }
+      #topProviders .tp-title {
+        font-size: 24px;
+        color: #555;
+        text-align: center;
+        margin-bottom: 20px;
+      }
+      #topProviders .tp-image-container {
+        display: flex;
+        justify-content: center;
+        gap: 50px;
+      }
+      #topProviders .tp-image-container img {
+        width: 120px;
+        height: auto;
+        object-fit: contain;
+      }
+      @media (max-width: 600px) {
+        #topProviders .tp-title {
+          font-size: 16px;
+        }
+        #topProviders .tp-image-container {
+          flex-wrap: nowrap;
+          overflow-x: auto;
+          padding: 10px;
+          gap: 10px;
+        }
+        #topProviders .tp-image-container img {
+          width: 100px;
+          height: auto;
+        }
+        #topProviders .tp-image-container img:first-of-type {
+          margin-left: 10px;
+        }
+        #topProviders .tp-image-container img:last-of-type {
+          margin-right: 10px;
+        }
+      }
+      /* =========================
+       Carousel 部分
+      ========================== */
+      .carousel-container {
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        padding: 20px 0;
+        overflow: hidden;
+        background-color: #808080;
+      }
+      .carousel {
+        display: flex;
+        gap: 10px;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+        width: max-content;
+        white-space: nowrap;
+        cursor: grab;
+        will-change: transform;
+      }
+      .carousel::-webkit-scrollbar {
+        display: none;
+      }
+      .carousel a {
+        flex: 0 0 auto;
+        width: 60vw;
+        max-width: 200px;
+      }
+      .carousel img {
+        width: 100%;
+        display: block;
+        border-radius: 10px;
+        pointer-events: none;
+      }
+      @media (max-width: 600px) {
+        .carousel a {
+          width: 50vw;
+          max-width: 150px;
+        }
+        .carousel {
+          padding-left: 20px;
+        }
+      }
+      /* =========================
+       Payment Methods 部分
+      ========================== */
+      #paymentMethods {
+        padding: 20px 0;
+        width: 100%;
+        background-color: #ffffff;
+        text-align: center;
+      }
+      #paymentMethods .pm-title {
+        font-size: 24px;
+        color: #555;
+        margin-bottom: 15px;
+      }
+      #paymentMethods .pm-image-container {
+        display: grid;
+        grid-template-columns: repeat(6, auto);
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+      }
+      #paymentMethods .pm-image-container img {
+        width: 100px;
+        height: auto;
+        object-fit: contain;
+        max-width: 100%;
+      }
+      @media (max-width: 600px) {
+        #paymentMethods .pm-title {
+          font-size: 18px;
+        }
+        #paymentMethods .pm-image-container {
+          grid-template-columns: repeat(3, auto);
+          gap: 5px;
+        }
+      }
+      /* =========================
+       Secure Info 部分
+      ========================== */
+      #secureInfo {
+        background-color: #12181f;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: white;
+      }
+      #secureInfo .secure-container {
+        max-width: 900px;
+        width: 100%;
+        margin: 0 auto;
+      }
+      #secureInfo .secure-container img {
+        display: block;
+        margin: 0 auto 20px;
+        width: 100%;
+        height: auto;
+      }
+      @media (min-width: 769px) {
+        #secureInfo .secure-container img {
+          width: 200px;
+        }
+      }
+      #secureInfo .secure-container p {
+        color: white;
+        font-size: 14px;
+        line-height: 1.6;
+        text-align: left;
+        margin-bottom: 15px;
+      }
+      @media (max-width: 768px) {
+        #secureInfo .secure-container {
+          max-width: 85%;
+        }
+        #secureInfo .secure-container img {
+          width: 50%;
+        }
+        #secureInfo .secure-container p {
+          font-size: 12px;
+          line-height: 1.4;
+          text-align: center;
+        }
+      }
+      .white-line {
+        width: 65%;
+        height: 2px;
+        background-color: white;
+        margin: 20px auto;
+        border-top: 1px solid transparent;
+      }
+      /* =========================
+       Telegram Banner 部分
+       在手机视图下让 Telegram Banner 贴合左右
+      ========================== */
+      #telegramContainer {
+        background-color: #12181f;
+        width: 100%;
+      }
+      #telegramContainer .wrapper {
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 20px 0;
+      }
+      #telegramBanner img {
+        max-width: 80%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+      }
+      @media (max-width: 600px) {
+        #telegramContainer .wrapper {
+          max-width: 100%;
+          margin: 0;
+          padding: 0;
+        }
+        #telegramBanner img {
+          width: 100% !important;
+          max-width: 100% !important;
+          margin: 0;
+          border-radius: 0;
+        }
+      }
+      /* =========================
+       Footer Container (徽章 + 版权)
+      ========================== */
+      #footerContainer {
+        background-color: #12181f;
+        padding: 20px 0;
+      }
+      .white-line {}
+      #footerContainer .footer-content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 0 20px;
+      }
+      #footerContainer .footer-left img {
+        width: 200px;
+        height: 60px;
+        object-fit: contain;
+        margin-right: 10px;
+      }
+      #footerContainer .footer-right {
+        color: #ffffff;
+        font-size: 14px;
+      }
+      @media (max-width: 600px) {
+        #footerContainer .footer-content {
+          flex-direction: column;
+          align-items: center;
+          gap: 5px;
+        }
+        .footer-right {
+          order: 1;
+          text-align: center;
+          margin-bottom: 0;
+        }
+        .footer-left {
+          order: 2;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 3px;
+        }
+        .footer-left img {
+          width: 80px;
+          height: 80px;
+          margin-right: 0;
+        }
+      }
+      @media (min-width: 1024px) {
+        /* 只在 PC 视图生效 */
+        .footer-left {
+          display: flex;
+          flex-wrap: nowrap;
+          justify-content: space-between;
+          align-items: center;
+        }
+      }
+      /* =========================
+       手机视图下贴合左右的关键
+      ========================== */
+      @media (max-width: 600px) {
+        html,
+        body {
+          overflow-x: hidden;
+        }
+        .secure-container,
+        .footer-content {
+          padding: 0 !important;
+          margin: 0 !important;
+        }
+        .white-line.full-width {
+          width: 100vw;
+          position: relative;
+          left: 50%;
+          transform: translateX(-50%);
+          margin: 20px 0;
+        }
+      }
+      /* =========================
+       返回顶部按钮
+      ========================== */
+      #scrollTopBtn {
+        position: fixed;
+        bottom: 20px;
+        left: 20px;
+        background: none;
+        border: none;
+        padding: 0;
+        cursor: pointer;
+        opacity: 1;
+        z-index: 10000;
+      }
+      #scrollTopBtn img {
+        width: 50px;
+        height: auto;
+      }
+      #scrollTopBtn {
+        position: fixed;
+        bottom: 60px;
+        left: 20px;
+        background: none;
+        border: none;
+        padding: 0;
+        cursor: pointer;
+        opacity: 1;
+        z-index: 10000;
+      }
+      #scrollToTopBtn {
+        background-color: transparent;
+        border: none;
+        color: #fff;
+        position: fixed;
+        bottom: 30px;
+        left: 20px;
+        width: 50px;
+        height: 125px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: background-color .3s, transform .3s;
+        z-index: 1000;
+      }
+      .back-to-top {
+        position: fixed;
+        bottom: 20px;
+        left: 20px;
+        width: 50px;
+        height: 125px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: background-color .3s, transform .3s;
+        z-index: 1000;
+      }
+/* Partners Section */
+.partners-header {
+  background-color: transparent;
+  text-align: center;
+  margin: 10px 0; /* 减少顶部和底部的间距 */
+
+}
+/* ✅ 手机上 partner 一排两个图 */
+@media (max-width: 500px) {
+  .image-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 0 8px;
+    max-width: 100%;
+  }
+
+  .image-container {
+    flex: 0 0 calc(50% - 10px);
+    max-width: calc(50% - 10px);
+    margin-bottom: 15px;
+    box-sizing: border-box;
+  }
+
+  .image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+}
